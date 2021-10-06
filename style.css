@@ -1,3 +1,57 @@
-body{
-    background-color: lime;
+:root{
+    --dark: #1f2937;
+    --light: #f9faf8;
+    --accent: #e5e7eb;
+    --button: #3882f6;
 }
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: var(--accent);
+    font-size: 18px;
+}
+
+body{
+
+    background-color: aquamarine;
+}
+
+header,
+footer{
+    background-color: var(--dark);
+}
+
+header,
+main,
+footer{
+    padding: 0 15rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 50px;
+}
+
+.logo{
+    color: var(--light);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
