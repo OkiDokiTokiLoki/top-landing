@@ -11,17 +11,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: helvetica, sans-serif;
 }
 
 a{
     text-decoration: none;
     color: var(--accent);
     font-size: 18px;
-}
-
-body{
-
-    background-color: aquamarine;
 }
 
 header,
@@ -52,7 +48,7 @@ nav{
 ul{
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .hero{
@@ -85,5 +81,34 @@ button{
     border: none;
     border-radius: 3px;
     width: 20%;
+}
 
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 350px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+.cards{
+    display: flex;
+    gap: 40px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img{
+    border: 2px solid var(--button);
+    border-radius: 12px;
 }
