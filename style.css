@@ -18,6 +18,11 @@ a{
     text-decoration: none;
     color: var(--accent);
     font-size: 18px;
+    transition: all 200ms ease-in-out;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 header,
@@ -81,6 +86,13 @@ button{
     border: none;
     border-radius: 4px;
     width: 20%;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+button:hover{
+    color: var(--dark);
+    background-color: var(--light);
 }
 
 .top{
@@ -114,7 +126,7 @@ h2{
 }
 
 .mid{
-    height: 300px;
+    height: 400px;
     background-color: var(--accent);
     display: flex;
     flex-direction: column;
@@ -124,7 +136,7 @@ h2{
 
 blockquote{
     font-style: italic;
-    font-size: 26px;
+    font-size: 28px;
     color: var(--dark);
     font-weight: 100;
 }
@@ -147,7 +159,7 @@ blockquote{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 120px;
+    height: 150px;
     border-radius: 8px;
     color: var(--light);
 }
